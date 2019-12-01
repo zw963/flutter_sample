@@ -1,14 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/screens/screen1/components/body.dart';
+import 'package:flutter_sample/screens/dashboard/components/body.dart';
 
-class Screen1 extends StatelessWidget {
+class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("First screen"),
-      ),
       body: Body(),
     );
   }
