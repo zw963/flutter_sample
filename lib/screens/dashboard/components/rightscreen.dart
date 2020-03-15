@@ -20,6 +20,7 @@ class RightScreen extends StatelessWidget {
   Widget buildButton(context, {Color color}) {
     return Expanded(
       child: Column(
+
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           RaisedButton(

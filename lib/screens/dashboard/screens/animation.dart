@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 
 class AnimationScreen extends StatefulWidget {
   @override
@@ -19,13 +18,13 @@ class _AnimationScreenState extends State<AnimationScreen>
       vsync: this,
       duration: Duration(milliseconds: 2000),
     );
-    
+
     leftAnimation = Tween<Offset>(
       begin: Offset(-1.5, 0),
       end: const Offset(1.5, 0.0),
     ).animate(CurvedAnimation(
       parent: controller,
-      curve: Curves.decelerate,
+      curve: Curves.easeOutExpo,
     ));
 
     rightAnimation = Tween<Offset>(
@@ -33,9 +32,9 @@ class _AnimationScreenState extends State<AnimationScreen>
       end: const Offset(1.5, 0.0),
     ).animate(CurvedAnimation(
       parent: controller,
-      curve: Curves.decelerate,
+      curve: Curves.easeOutExpo,
     ));
-    
+
     controller.forward();
   }
 
