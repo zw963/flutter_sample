@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_sample/screens/dashboard/dashboard.dart';
 import 'package:flutter_sample/theme/style.dart';
 
@@ -13,6 +12,7 @@ class App extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => Dashboard(),
+        '/test': (context) => Dashboard(),
       },
     );
   }

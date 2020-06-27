@@ -29,11 +29,9 @@ void main() {
   });
 
   group('other tests', () {
-
     testWidgets('second test', (WidgetTester tester) async {
       expect(1, 1);
     });
-
     testWidgets('third test', (WidgetTester tester) async {
       expect(2, 2);
     });

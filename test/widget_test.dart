@@ -8,21 +8,23 @@
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets('first test', (WidgetTester tester) async {
+  testWidgets("bla", (WidgetTester tester) async {
     expect(0, 0);
   });
 
   group('other tests', () {
-    testWidgets('second test', (WidgetTester tester) async {
-      expect(1, 1);
-    });
-
-    testWidgets('third test', (WidgetTester tester) async {
+    testWidgets('second (test)', (WidgetTester tester) async {
       expect(2, 2);
     });
 
-    test("fourth test", () {
+    testWidgets('third', (WidgetTester tester) async {
       expect(3, 3);
+    });
+
+    group('another tests', () {
+      test("fourth test", () {
+        expect(3, 3);
+      });
     });
   });
 }
