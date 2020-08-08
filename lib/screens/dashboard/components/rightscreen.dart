@@ -28,7 +28,6 @@ class _RightScreenState extends State<RightScreen> {
         ),
       );
 
-  @Deprecated("asd")
   Widget buildButton(Color color, GlobalKey effectKey) => Expanded(
         child: Center(
           child: RippleEffect(
