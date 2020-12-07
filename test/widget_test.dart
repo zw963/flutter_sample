@@ -1,29 +1,43 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility that Flutter provides. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
+import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets("bla", (WidgetTester tester) async {
+  setUpAll(() async {});
+  testWidgets("root test", (WidgetTester tester) async {
     expect(0, 0);
   });
 
-  group('other tests', () {
+  group('foo some group', () {
+    testWidgets("test foo", (WidgetTester tester) async {
+      expect(0, 0);
+    });
+  });
+
+  testWidgets("other test", (WidgetTester tester) async {
+    expect(0, 0);
+  }, skip: true);
+
+  group('another group', () {
     testWidgets('second (test)', (WidgetTester tester) async {
       expect(2, 2);
     });
 
     testWidgets('third', (WidgetTester tester) async {
+      await sleep(Duration(seconds: 2));
       expect(3, 3);
     });
 
-    group('another tests', () {
+    group('almost group', () {
       test("fourth test", () {
-        expect(3, 3);
+        expect(3, 2);
+      });
+
+      group('last group', () {
+        test("the last test", () {
+          expect(3, 3);
+          expect(3, 2);
+        });
       });
     });
   });

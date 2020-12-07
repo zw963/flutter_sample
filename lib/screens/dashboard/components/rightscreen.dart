@@ -41,18 +41,16 @@ class _RightScreenState extends State<RightScreen> {
               elevation: 5.0,
               onPressed: () => RippleEffect.wrap(effectKey, _goToNextPage),
               child: Container(
-                height: 70,
-                child: Padding(
-                    padding: EdgeInsets.all(8.0), child: Icon(Icons.code)),
-              ),
+                  height: 70,
+                  child: Padding(
+                      padding: EdgeInsets.all(8.0), child: Icon(Icons.code))),
             ),
           ),
         ),
       );
 
-  Future<void> _goToNextPage() async => Navigator.of(context).push(
-        FadeRouteBuilder(
-          page: AnimationScreen(),
-        ),
-      );
+  Future<void> _goToNextPage() async =>
+      Navigator.of(context).push(FadeRouteBuilder(
+        page: AnimationScreen(),
+      ));
 }

@@ -6,13 +6,10 @@ class LeftScreen extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        RaisedButton(
-          child: Text('Test'),
-          onPressed: () {
-            print('test');
-          },
-          color: Colors.blue,
-        )
+        Text('some text'),
+        Text('some text'),
+        Text('some text'),
+        Text('some text')
       ],
     );
   }
