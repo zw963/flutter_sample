@@ -5,5 +5,5 @@ import (
 )
 
 var options = []flutter.Option{
-	flutter.WindowInitialDimensions(380, 720),
+	flutter.WindowInitialDimensions(800, 1280),
 }

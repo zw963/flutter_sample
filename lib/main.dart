@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/theme/style.dart';
 
+import 'screens/dashboard/dashboard.dart';
+
 void main() => runApp(App());
 
 class App extends StatelessWidget {
@@ -11,7 +13,7 @@ class App extends StatelessWidget {
       theme: appTheme(),
       initialRoute: '/',
       routes: {
-        '/': (context) => Column(children: [Container(), Container(), Container(), Container(), Container()]),
+        '/': (context) => Dashboard(),
       },
     );
   }
