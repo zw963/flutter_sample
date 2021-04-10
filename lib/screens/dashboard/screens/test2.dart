@@ -3,11 +3,11 @@ import 'package:flutter/cupertino.dart';
 class BClass extends StatelessWidget{
   BClass({this.c});
 
-  final CClass c;
+  final CClass? c;
 
   @override
   Widget build(BuildContext context) {
-    return c;
+    return c!;
   }
 }
 

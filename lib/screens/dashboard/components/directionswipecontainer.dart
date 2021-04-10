@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class DirectionSwipeContainer extends StatelessWidget {
-  final PageController pageController;
-  final int pageOnTap;
-  final Color color;
-  final IconData icon;
+  final PageController? pageController;
+  final int? pageOnTap;
+  final Color? color;
+  final IconData? icon;
 
   DirectionSwipeContainer({
     this.pageController,
@@ -17,8 +17,8 @@ class DirectionSwipeContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        pageController.animateToPage(
-          pageOnTap,
+        pageController!.animateToPage(
+          pageOnTap!,
           duration: Duration(milliseconds: 500),
           curve: Curves.ease,
         );

@@ -24,7 +24,7 @@ void main() {
     });
 
     testWidgets('third', (WidgetTester tester) async {
-      await sleep(Duration(seconds: 2));
+      sleep(Duration(seconds: 2));
       expect(3, 3);
     });
 

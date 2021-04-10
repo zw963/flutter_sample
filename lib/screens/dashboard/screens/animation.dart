@@ -7,9 +7,9 @@ class AnimationScreen extends StatefulWidget {
 
 class _AnimationScreenState extends State<AnimationScreen>
     with SingleTickerProviderStateMixin {
-  AnimationController controller;
-  Animation<Offset> leftAnimation;
-  Animation<Offset> rightAnimation;
+  late AnimationController controller;
+  late Animation<Offset> leftAnimation;
+  late Animation<Offset> rightAnimation;
 
   @override
   void initState() {

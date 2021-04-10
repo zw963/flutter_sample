@@ -4,15 +4,15 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
     sdk : flutter
 
-  rect_getter: ^0.1.0
-  # linear_progress_loading:
-  #   path: ../linear_progress_loading
+  rect_getter: ^1.0.0
+  linear_progress_loading:
+    path: ../linear_progress_loading
 
 dev_dependencies:
   flutter_test:

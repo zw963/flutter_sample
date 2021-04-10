@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/screens/dashboard/components/leftscreen.dart';
-import 'package:flutter_sample/screens/dashboard/components/rightscreen.dart';
 import 'package:flutter_sample/screens/dashboard/components/directionswipecontainer.dart';
 
 PageController dashboardController = PageController(initialPage: 0);
@@ -45,7 +44,6 @@ class Body extends StatelessWidget {
             ),
           ],
         ),
-        RightScreen()
       ],
     );
   }
