@@ -11,8 +11,8 @@ dependencies:
     sdk : flutter
 
   rect_getter: ^1.0.0
-  linear_progress_loading:
-    path: ../linear_progress_loading
+  # linear_progress_loading:
+  #   path: ../linear_progress_loading
 
 dev_dependencies:
   flutter_test:
